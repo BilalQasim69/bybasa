@@ -12,13 +12,13 @@ from diffusers.utils import (
     get_adapter_name,
 )
 import os
-from huggingface_hub import login
+# from huggingface_hub import login
 
-# Retrieve the token from the environment variable
-hf_token = os.getenv("HUGGINGFACE_TOKEN")
+# # Retrieve the token from the environment variable
+# hf_token = os.getenv("HUGGINGFACE_TOKEN")
 
-# Login using the token (no need for manual login)
-login(token=hf_token)
+# # Login using the token (no need for manual login)
+# login(token=hf_token)
 
 # Padding logic to make the image square
 def add_padding_to_square(image, target_size=1024, pad_color='black'):
